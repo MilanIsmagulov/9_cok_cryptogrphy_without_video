@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+    <title>Методы криптографической защиты информации</title>
+</head>
+<body>
+    <div class="main_window">
+        <div class="black_header">
+            <h1>
+                Методы криптографической защиты информации
+            </h1>
+            <div class="links_black_header">
+                <a href="../../../index.html">На главную</a>
+                <a href="../../../new_material/page_new_mat.html" class="disabled_button">Назад</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="quiz_window">
+                <div id="quiz_part">
+                    <div class="window_header">
+                        <div class="questions" id="question_number_1">
+                            
+                        </div>
+                        <div class="number_marker">
+                            <img id="open_popup_button" src="./content/description.svg" alt="description">
+                            <p class="number_description">3/10</p>
+                        </div>
+
+                    </div>
+                    <div class="theory_eom" id="theory_eom_2">
+                        <div class="first">
+                            <!-- <div class="image_part">
+                                <img class="main_image" height="350px" src="./content/1.png" alt="1">
+                                <button class="zoom_popup" ><img src="./content/zoom_up.svg" alt="2"></button>
+                            </div>
+                            <div class="image_part">
+                                <img class="main_image" height="350px" src="./content/2.png" alt="1">
+                                <button onclick="location.href='#popup3'" class="zoom_popup" ><img src="./content/zoom_up.svg" alt="2"></button>
+                            </div>
+                            <div class="image_part">
+                                <img class="main_image" height="350px" src="./content/3.png" alt="1">
+                                <button onclick="location.href='#popup4'" class="zoom_popup" ><img src="./content/zoom_up.svg" alt="2"></button>
+                            </div> -->
+
+                        </div>
+                        <div class="second">
+                            <div class="left_side">
+                                <p><b>Алгоритм Эль-Гамаля</b> представляет собой еще один асимметричный алгоритм шифрования. Он был разработан Тахером Эль-Гамалем в 1985 году и является одним из основных алгоритмов в современной криптографии. <br><br>
+                                    Основная идея алгоритма Эль-Гамаля заключается в возможности шифровать и расшифровывать данные с помощью открытого ключа. Алгоритм основан на задаче нахождения дискретного логарифма в конечном поле. <br><br>
+                                    В Алгоритме Эль-Гамаля необходимо выбрать некое простое число p и рассматриваем все операции в поле по модулю числа p. Выбираем некое число g, которое будет являться генератором, оно может быть любым от 2 до p-1. И взяв случайное число x, получим закрытый ключ. Затем определяется результат y = gx mod p. Открытым ключом будет являться число y, g, p, закрытым ключом – x, g, p. <br><br>
+                                    Сложность восстановления закрытого ключа по открытому связана с задачей дискретного логарифма, т.е., когда у нас есть  y = gx mod p, для того чтобы восстановить x, потребуется вычислить x=logg y mod p. <br><br>
+                                    
+                                </p>
+
+                                <span>Шифрование Эль-Гамаля</span>
+                                <img src="./content/4.png" width="85%" alt="4">
+
+                                <p>Этот алгоритм позволяет эффективно выполнять различные операции в криптосистеме, такие как шифрование и проверка цифровой подписи. В конечных полях, которые являются основой для решения этой задачи, операции выполняются по модулю некоторого простого числа, что позволяет эффективно работать с большими числами. <br><br>
+                                    Этот алгоритм имеет важное значение в современной криптографии и находит применение в различных сферах, таких как защита информации, электронная коммерция и безопасность сетей. Алгоритм Эль-Гамаля обладает высокой стойкостью к взлому, благодаря сложности решения данной математической задачи. Однако он требует больших вычислительных ресурсов и длительного времени для выполнения операций шифрования и расшифрования. В целом, алгоритм Эль-Гамаля является важным инструментом для защиты информации в современном мире, где конфиденциальность и безопасность данных имеют высокое значение. <br><br>
+                                    </p>
+
+                                <p>RSA также может шифровать и расшифровывать общую информацию для безопасного обмена данными, а также выполнять проверку цифровой подписи. <br>
+                                В алгоритме RSA используются комбинаторные методы генерации ключей и шифрования данных. В отличие от алгоритмов симметричного шифрования, которые имеют только один ключ для шифрования и расшифровки информации, в алгоритме для шифрования данных используется открытый ключ получателя, а для расшифровки данных используется закрытый ключ получателя.</p>
+                                
+                                
+                                <p>Для <b>генерации ключа </b>необходимо использовать определенные переменные и параметры, все из которых описаны ниже:
+                                </p><img src="./content/6.png" width="98%" alt="6">
+                                
+
+
+                        </div>  
+                    </div>
+
+                </div>
+                <div class="step_marker_and_buttons">
+                    <div class="step_marker">
+                        
+                    </div>
+                    <div class="main_buttons">
+                        <button id="check_button_0" onclick="location.href='../javascript_quiz_app_4/index.html'">
+                            Назад
+                        </button>
+                        <button id="check_button_3" onclick="location.href='../javascript_quiz_app_6/index.html'">
+                            Далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="popup1" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_1"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        <video width="70%" src="./content/etapy_razrabotki_po.mp4" controls="controls"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup3" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button onclick="location.href='#'" id="close_popup_button_1"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        <img src="./content/2.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup4" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button onclick="location.href='#'" id="close_popup_button_1"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        <img src="./content/3.png" alt="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button id="close_popup_button_2"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        <div style="margin-top: 225px;"> 
+                            <h3>1. Ознакомьтесь с правилами техники безопасности</h3>
+
+                            <h3>2. Ознакомьтесь с алгоритмом RSA</h3>
+    
+                            <h3>3. Укажите, на чем основана безопасность алгоритма RSA для формирования цифровой подписи</h3>
+    
+                            <h3>4. Выберите, какие из утверждений об алгоритме RSA являются верными</h3>
+    
+                            <h3>5. Ознакомьтесь с алгоритмом Эль-Гамаля</h3>
+    
+                            <h3>6. Укажите на трудности чего основан алгоритм Эль-Гамаля</h3>
+    
+                            <h3>7. Ознакомьтесь с алгоритмом DES (Data Encryption Standard)</h3>
+    
+                            <h3>8. Укажите, что означает акроним DES</h3>
+    
+                            <h3>9. Ознакомьтесь с алгоритмом AES</h3>
+    
+                            <h3>10. Укажите, как расшифровывается аббревиатура AES</h3>
+    
+                            <h3>11. Выберите, каков размер входного блока обрабатываемой информации при использовании стандарта шифрования АES</h3>
+    
+                            <h3>12. Ознакомьтесь с технологией цифровой подписи</h3>
+    
+                            <h3>13. Укажите, что обеспечивает цифровая подпись</h3>
+    
+                            <h3>14. Выберите, какие действия можно выполнять с документом, подписанным цифровой подписью</h3>
+    
+                            <h3>15. Изучите шифр Виженера</h3>
+    
+                            <h3>16. Укажите, к какому шифру относится шифр Виженера</h3>
+    
+                            <h3>17. Укажите, какой ключ используется в шифре Виженера</h3>
+    
+                            <h3>18. Изучите шифр Цезаря</h3>
+    
+                            <h3>19. Зашифруйте с помощью шифра Виженера </h3>
+    
+                            <h3>20. Выберите, как называется «исторический» шифр, в котором каждая буква исходного текста заменялась буквой, стоящей на некоторое фиксированное число мест дальше в алфавите</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
