@@ -17,12 +17,6 @@ body{
     background: #fff;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
-}
-
-.main_window{
-    height: 100%;
-    width: 100%;
 }
 
 .black_header{
@@ -30,7 +24,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -42,9 +35,22 @@ body{
     padding-right: 30px;
     border: solid 2px;
     border-radius: 35px;
+
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
+}
+
+.black_header h1{
+    width: 60% !important;
+    font-size: clamp(25px,2vw,35px) !important;
+}
+
+.questions p{
+    font-size: clamp(25px,2vw,35px) !important;
+}
+
+.links_black_header{
+    min-width: 165px;
 }
 
 .black_header a:hover{
@@ -57,7 +63,6 @@ body{
     margin-right: 25px;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    height: 84%;
 }
 
 .answer_buttons{
@@ -196,7 +201,15 @@ input:disabled {
         width: 100%;
 
     }
-
+    .step_marker{
+        margin-left: 0 !important;
+        margin-bottom: 25px !important;
+    }
+    .step_marker_and_buttons{
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 25px !important;
+    }
     .answers_btn form {
         width: 700px;
         
@@ -297,15 +310,12 @@ input:disabled {
 
 
 .theory_eom img{
+    width: 100% !important;
 
-    margin-left: 35px;
-    margin-right: 35px;
-    border-radius: 25px;
 }
 
 .theory_eom p{
-    font-size: 20px;
-
+    font-size: clamp(20px,1.25vw,30px) !important;
 }
 
 .main_image{
@@ -320,22 +330,27 @@ input:disabled {
     font-weight: 500;
 }
 
-@media (max-width: 820px) {
-    .black_header{
-        height: 150px;
+@media (max-width: 1180px) {
+    .black_header h1{
+        width: 50%;
     }
+    .image_with_text{
+        margin-left: 25px !important;
+        flex-direction: column !important;
+    }
+    .content{
+        margin-right: 0;
+    }
+    .popup_text img{
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 820px) {
 
     .black_header h1{
         width: 70%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-        width: 93vw;
-    }
-
-    .theory_eom{
-        height: 600px;
     }
     .content{
         margin-right: 0;
@@ -346,8 +361,4 @@ input:disabled {
     .second{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1180px) {
-
 }

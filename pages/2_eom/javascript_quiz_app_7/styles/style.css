@@ -30,7 +30,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -42,9 +41,14 @@ body{
     padding-right: 30px;
     border: solid 2px;
     border-radius: 35px;
+    min-width: 165px !important;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
+}
+
+.black_header h1{
+    font-size: clamp(20px,3vw,35px) !important;
+    width: 60% !important;
 }
 
 .black_header a:hover{
@@ -54,10 +58,7 @@ body{
 }
 
 .content{
-    margin-right: 25px;
-    border-radius: 50px;
     background-color: rgb(255, 255, 255);
-    height: 84%;
 }
 
 .answer_buttons{
@@ -191,121 +192,24 @@ input:disabled {
     background: rgb(255, 144, 144);
 }
 
-@media (max-width: 1180px) {
-    body{
-        width: 100%;
-
-    }
-
-    .answers_btn form {
-        width: 700px;
-        
-    }
-    .answers_btn form div {
-        width: 700px;
-
-    }
-    .choices_div2{
-        width: 700px;
-    }
-    .question_part #question {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    .button_part {
-        margin-top: 5px;
-        padding-bottom: 50px;
-    }
-
-    .step_marker_and_buttons {
-        width: 90vw;
-        padding-bottom: 0px;
-        
-    }
-
-    .answers_btn form div {
-        margin: 5px;
-    }
-
-    .main_buttons button {
-        width: 130px;
-    }
-    .questions{
-        margin: 15px;
-    }
-    .questions p{
-        padding:  10px;
-    }
-    .answers_btn form {
-        margin-bottom: 20px;
-    }
-}
 
 .theory_eom{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.first_paragraph {
-    display: flex;
-    align-items: center;
-}
-
-.header_image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header_image button{
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    border: 0;
-}
-
-.header_image button:active{
-    background-color: #5dabe2;
-}
-
-.header_image button img{
-    margin: 0;
-    width: 30px;
-    height: 30px;
-}
-
-.image_with_text{
-    display: flex;
+    width: 100%;
     align-items: flex-start;
+    flex-direction: column !important;
 }
-
-.image_part {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.image_part h3{
-    font-size: 25px;
-    margin-right: 100px;
-    color: rgb(255, 114, 118);
-}
-
 
 .theory_eom img{
-
-    margin-left: 35px;
-    margin-right: 35px;
-    border-radius: 25px;
+    padding: 3vw;
+    width: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .theory_eom p{
-    font-size: 20px;
-
+    padding: 2vh 2vw 2vh 2vw !important;
+    font-size: clamp(20px,2vw,30px) !important;
 }
 
 .main_image{
@@ -320,22 +224,47 @@ input:disabled {
     font-weight: 500;
 }
 
-@media (max-width: 820px) {
-    .black_header{
-        height: 150px;
-    }
 
+@media (max-width: 1180px) {
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .image_with_text{
+        align-items: center;
+        flex-direction: column;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 50px;
+    }
+    .main_buttons button {
+        width: 130px;
+    }
+    .questions{
+        margin: 15px;
+    }
+    .questions p{
+        padding:  10px;
+    }
+    .theory_eom{
+        padding: 25px !important;
+    }
+}
+
+@media (max-width: 820px) {
+    .theory_eom{
+        padding: 25px !important;
+        flex-direction: column !important;
+    }
+    .step_marker_and_buttons{
+        margin-top: 5vh;
+        margin-left: 0 !important;
+        padding: 25px;
+    }
     .black_header h1{
         width: 70%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-        width: 93vw;
-    }
-
-    .theory_eom{
-        height: 600px;
     }
     .content{
         margin-right: 0;
@@ -349,10 +278,42 @@ input:disabled {
 }
 
 @media (max-width: 1180px) {
-    .popup_content{
-        min-height: 80vh;
+    .black_header h1{
+        width: 50%;
     }
-    .black_header{
-        height: 150px;
+    .content{
+        margin-right: 0;
+    }
+    .step_marker{
+        margin-bottom: 25px !important;
+    }
+    .step_marker_and_buttons{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-height: 500px){
+    .popup_content{
+        padding-top: 10px !important;
+    }
+    .popup_text{
+        font-size: 18px !important;
+        height: 75% !important;
+    }
+}
+
+@media (max-width: 1180px) {
+    .question_part #question{
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part{
+        margin-top: 5px;
+        padding-bottom: 0px;
+    }
+    .main_buttons button {
+        width: 130px;
     }
 }

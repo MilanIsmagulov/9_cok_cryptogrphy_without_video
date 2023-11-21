@@ -1,10 +1,10 @@
 .popup_text{
 
-    height: 500px;
+    height: 85% !important;
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     padding: 10px;
 }
@@ -123,10 +123,8 @@
 .popup_content {
     background-color: white;
     color: black;
-    min-width: 400px;
-    max-width: 1700px;
-
-    min-height: 60vh;
+    width: clamp(300px,80vw,1800px) !important;
+    height: clamp(400px,70vh,1000px) !important;
     border-radius: 25px;
     padding: 25px;
 }
@@ -251,7 +249,7 @@
     align-items: center;
 }
 
-.theory_eom::-webkit-scrollbar-track
+body::-webkit-scrollbar-track
 {   
     border-radius: 10px;
 	background-color: #dadada;
@@ -260,7 +258,7 @@
     width: 25px;
 }
 
-.theory_eom::-webkit-scrollbar
+body::-webkit-scrollbar
 {
     border-radius: 10px;
 	width: 10px;
@@ -269,7 +267,7 @@
     width: 15px;
 }
 
-.theory_eom::-webkit-scrollbar-thumb
+body::-webkit-scrollbar-thumb
 {   
 
 	background-color: rgba(0, 0, 0, .2);
@@ -299,38 +297,30 @@
 }
 
 @media (max-width: 1180px) {
-    .black_header{
-        height: 120px;
+    .answers_btn form div{
+        width: 100% !important;
     }
-
-
+    .step_markers{
+        margin-left: 0 !important;
+        position: relative !important;
+        padding-bottom: 25px;
+    }
+    .main_buttons{
+        flex-direction: column;
+    }
+    #check_button_0{
+        margin-top: 5px;
+    }
+    .answers_btn input{
+        margin: 10px !important;
+    }
     .black_header h1{
         width: 50%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-    }
-
-    .theory_eom{
-        height: 400px;
     }
     .content{
         margin-right: 0;
     }
     .popup_text img{
-
         height: 100%;
-    }
-    .popup_body{
-        height: 50vh;
-    }
-    .popup_content {
-        height: 50vh;
-    }
-    .popup_text{
-        display: flex;
-        align-items: center;
-        height: 500px;
     }
 }

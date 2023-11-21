@@ -222,6 +222,7 @@ body{
     display: flex;
     align-items: center;
     border: solid 0px #00000080;
+    min-width: 150px !important;
     width: 45%;
     padding-top: 15px;
     padding-bottom: 15px;

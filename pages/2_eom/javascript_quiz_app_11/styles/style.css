@@ -75,15 +75,12 @@ body{
 
 }
 
-
-
 .main_buttons{
     margin-top: 45px;
     width: 98%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 35px;
     margin-right: 35px;
 }
 
@@ -93,9 +90,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
+}
+
+.black_header h1{
+    width: 60% !important;
+    font-size: clamp(25px,2vw,35px) !important;
+}
+
+.questions div{
+    font-size: clamp(25px,2vw,35px) !important;
+}
+
+.links_black_header{
+    min-width: 165px !important;
 }
 
 .black_header a{
@@ -106,7 +115,6 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
 }
 
