@@ -206,10 +206,7 @@
 
 .theory_eom{
     flex-direction: column;
-    height: 540px;
-    overflow-y: auto;
     margin-right: 25px;
-    
 }
 
 .image_part{
@@ -251,7 +248,7 @@
     align-items: center;
 }
 
-.theory_eom::-webkit-scrollbar-track
+body::-webkit-scrollbar-track
 {   
     border-radius: 10px;
 	background-color: #dadada;
@@ -260,7 +257,7 @@
     width: 25px;
 }
 
-.theory_eom::-webkit-scrollbar
+body::-webkit-scrollbar
 {
     border-radius: 10px;
 	width: 10px;
@@ -269,7 +266,7 @@
     width: 15px;
 }
 
-.theory_eom::-webkit-scrollbar-thumb
+body::-webkit-scrollbar-thumb
 {   
 
 	background-color: rgba(0, 0, 0, .2);
@@ -313,38 +310,88 @@
 }
 
 @media (max-width: 1180px) {
-    .black_header{
-        height: 120px;
+    body{
+        width: 100%;
     }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 0px;
+    }
+    .black_header h1{
+        width: 70%;
+    }
+    .content{
+        margin-right: 0;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .second{
+        flex-direction: column;
+    }
+    .main_buttons button {
+        width: 130px;
+    }
+    body{
+        width: 100%;
 
-
+    }
+    .answers_btn form {
+        width: 700px;
+    }
+    .answers_btn form div {
+        width: 700px;
+    }
+    .choices_div2{
+        width: 700px;
+    }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 50px;
+    }
+    .answers_btn form div {
+        margin: 5px;
+    }
+    .main_buttons button {
+        width: 130px;
+    }
+    .questions{
+        margin: 15px;
+    }
+    .left_side img{
+        width: 70% !important;
+    }
+    .questions p{
+        padding:  10px;
+    }
+    .answers_btn form {
+        margin-bottom: 20px;
+    }
     .black_header h1{
         width: 50%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-    }
-
-    .theory_eom{
-        height: 400px;
     }
     .content{
         margin-right: 0;
     }
     .popup_text img{
-
         height: 100%;
     }
-    .popup_body{
-        height: 50vh;
+    .step_marker{
+        margin-bottom: 25px !important;
     }
-    .popup_content {
-        height: 50vh;
-    }
-    .popup_text{
-        display: flex;
+    .step_marker_and_buttons{
+        flex-direction: column;
         align-items: center;
-        height: 500px;
+        padding-bottom: 25px !important;
     }
 }

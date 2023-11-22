@@ -58,8 +58,7 @@ body{
 }
 
 .quiz_window p{
-    font-size: 30px;
-
+    font-size: clamp(20px,1.85vw,25px) !important;
     color: rgb(255, 114, 118);
     font-weight: 700;
 }
@@ -249,9 +248,7 @@ body{
 @media (max-width: 1180px) {
     body{
         width: 100%;
-
     }
-
     .answers_btn form div {
         width: 700px;
     }
@@ -267,13 +264,6 @@ body{
         margin-top: 5px;
         padding-bottom: 0px;
     }
-
-    .step_marker_and_buttons {
-        width: 95vw;
-        padding-bottom: 50px;
-        
-    }
-
     .main_buttons button {
         width: 130px;
     }

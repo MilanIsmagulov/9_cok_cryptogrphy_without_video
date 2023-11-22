@@ -154,6 +154,7 @@ body{
 
 .number_marker p{
     font-size: 25px;
+    margin-right: 25px;
     color: #000;
     padding: 25px;
     border-left: 3px solid #000;
@@ -249,29 +250,30 @@ body{
 @media (max-width: 1180px) {
     body{
         width: 100%;
-
     }
 
-    .answers_btn form div {
-        width: 700px;
-    }
-    .choices_div2{
-        width: 700px;
-    }
     .question_part #question {
         padding: 10px;
         margin: 10px;
         margin-top: 10px;
     }
+    .step_marker{
+        min-width: 500px;
+        transform: scale(0.85) !important;
+        padding: 25px 0 !important;
+        margin: 0 !important;
+    }
+    .step_marker_and_buttons{
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        padding-bottom: 25px !important;   
+        align-items: center !important;
+        flex-direction: column !important;
+    }
     .button_part {
         margin-top: 5px;
         padding-bottom: 0px;
-    }
-
-    .step_marker_and_buttons {
-        width: 95vw;
-        padding-bottom: 50px;
-        
     }
 
     .main_buttons button {

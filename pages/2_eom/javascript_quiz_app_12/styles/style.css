@@ -13,6 +13,12 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 25px !important;
+    padding: 0 !important;
+    padding-left: 35px !important;
+}
+
 body{
     background: #fff;
     height: 100vh;
@@ -256,7 +262,7 @@ input:disabled {
 
 .theory_eom{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -309,7 +315,6 @@ input:disabled {
 
 
 .theory_eom img{
-
     margin-left: 35px;
     margin-right: 35px;
     border-radius: 25px;
@@ -317,7 +322,13 @@ input:disabled {
 
 .theory_eom p{
     font-size: 20px;
+}
 
+.theory_eom ul{
+    padding: 10px;
+    font-weight: 500 !important;
+    margin-left: 80px !important;
+    font-size: 25px !important;
 }
 
 .main_image{

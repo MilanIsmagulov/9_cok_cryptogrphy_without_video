@@ -74,7 +74,7 @@ body{
 
 .quiz_window p span{
     color: #000;
-    font-size: 40px;
+    font-size: clamp(30px,3vw,40px);
     font-weight: 900;
     margin-right: 15px;
 }
@@ -84,7 +84,6 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100%;
     width: 100%;
     margin: 15px;
     margin-top: 10px;
@@ -167,11 +166,6 @@ body{
     'GRAD' 200,
     'opsz' 20
   }
-
-.bottom_part{
-    position: absolute;
-    bottom: 50px;
-}
 
 .step_marker_and_buttons{
     display: flex;

@@ -3,10 +3,6 @@ let testAnswers = document.querySelector('#answers_buttons1');
 
 let Dalee = document.querySelector('#check_button_3')
 
-
-
-
-
 console.log('Script is Loaded')
 
 let questions = [

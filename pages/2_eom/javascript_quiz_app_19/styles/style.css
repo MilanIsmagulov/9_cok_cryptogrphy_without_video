@@ -27,7 +27,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -40,7 +39,6 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
 }
 
@@ -48,6 +46,19 @@ body{
     transition: all 0.3s;
     background-color: white;
     color: black;
+}
+
+.black_header h1{
+    width: 60% !important;
+    font-size: clamp(25px,2vw,35px) !important;
+}
+
+.questions p{
+    font-size: clamp(30px,2vw,35px) !important;
+}
+
+.links_black_header{
+    min-width: 165px !important;
 }
 
 .content{
@@ -172,4 +183,41 @@ body{
 
 .disabled_button{
     display: none;
+}
+.step_marker_and_buttons{
+    display: flex;
+    padding: 25px !important;
+    margin: 0 !important;
+    padding-top: 12vh !important;
+}
+
+
+@media (max-width: 1180px) {
+    .black_header h1{
+        width: 50%;
+    }
+    .step_marker_and_buttons{
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .questions input{
+        width: 95% !important; 
+    }
+
+    .questions p{
+        font-size: clamp(20px,2vw,35px) !important;
+    }
+    .step_marker{
+        margin: 0 !important;
+        margin-bottom: 25px !important;
+    }
+    .content{
+        margin-right: 0;
+    }
+    .popup_text img{
+
+        height: 100%;
+    }
 }
